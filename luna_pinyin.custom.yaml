@@ -1,17 +1,7 @@
-# luna_pinyin.custom.yaml
-#
-# 【朙月拼音】模糊音定製模板
-#   佛振配製 :-)
-#
-# 位置：
-# ~/.config/fcitx/rime  (Linux)
-# ~/Library/Rime  (Mac OS)
-# %APPDATA%\Rime  (Windows)
-#
-# 於重新部署後生效
-#
-
 patch:
+  punctuator/half_shape:
+   "#": "#"
+   "`": ["`", "‵", "·"]
   switches:                   # 注意缩进
     - name: ascii_mode
       reset: 0                # reset 0 的作用是当从其他输入法切换到本输入法重设为指定状态
@@ -104,6 +94,3 @@ patch:
   # 分尖團後 v => ü 的改寫條件也要相應地擴充：
   #'translator/preedit_format':
   #  - "xform/([nljqxyzcs])v/$1ü/"
-  
-  # 候选项设定为9
-  "menu/page_size": 9

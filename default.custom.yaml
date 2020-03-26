@@ -1,0 +1,3 @@
+patch:
+  # 候选词数量设定为9
+  "menu/page_size": 9
